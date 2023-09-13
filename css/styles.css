@@ -2036,6 +2036,7 @@ img {
 
 .menu-close-icon {
   stroke: var(--black);
+  fill: #060707;
   width: 32px;
   height: 32px;
 
