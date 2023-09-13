@@ -1929,7 +1929,7 @@ img {
   overflow: scroll;
   background-image: url("../img/mobile-menu/mob-menu-bg_mob.jpg");
 
-  background-position: bottom;
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -2033,6 +2033,7 @@ img {
   margin-left: auto;
 }
 .menu-close-icon {
+  width: 100%;
   stroke: var(--black-light);
   transition: stroke var(--animation);
 }
