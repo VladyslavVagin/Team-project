@@ -1927,6 +1927,7 @@ img {
 
   padding: 20px;
   overflow: scroll;
+  cursor: pointer;
   background-image: url("../img/mobile-menu/mob-menu-bg_mob.jpg");
 
   background-position: bottom center;
@@ -2033,9 +2034,9 @@ img {
   margin-left: auto;
 }
 .menu-close-icon {
-  width: 100%;
-  stroke: var(--black-light);
+  stroke: var(--white);
   transition: stroke var(--animation);
+  cursor: pointer;
 }
 .menu-close-icon:hover,
 .menu-close-icon:focus,
@@ -2067,10 +2068,9 @@ img {
 
 @media only screen and (min-width: 768px) {
   .close-button {
-    width: 40;
-    height: 40;
+    width: 60;
+    height: 60;
   }
-
   .mobile-menu-list {
     gap: 28px;
   }
