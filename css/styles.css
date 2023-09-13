@@ -2022,8 +2022,8 @@ img {
 */
 
 .close-button {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2065,6 +2065,11 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
+  .close-button {
+    width: 40;
+    height: 40;
+  }
+
   .mobile-menu-list {
     gap: 28px;
   }
