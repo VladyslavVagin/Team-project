@@ -222,6 +222,12 @@ img {
   background-color: transparent;
   display: inline-flex;
   align-items: center;
+  stroke: var(--white);
+  transition: stroke var(--animation);
+}
+.header-nav-button:focus,
+.header-nav-button:active {
+  stroke: var(--brown);
 }
 
 .header-singup-link {
@@ -2036,11 +2042,15 @@ img {
 
 .menu-close-icon {
   stroke: var(--black);
-  fill: #060707;
   width: 32px;
   height: 32px;
-
   display: block;
+  transition: stroke var(--animation);
+}
+.menu-close-icon:hover,
+.menu-close-icon:focus,
+.menu-close-icon:active {
+  stroke: var(--white);
 }
 
 @media only screen and (min-width: 768px) {
