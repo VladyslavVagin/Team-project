@@ -272,7 +272,7 @@ img {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.8px) {
   .header-singup-title {
     display: none;
   }
@@ -319,7 +319,7 @@ img {
   }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1279.8px) {
   .header-nav-list {
     display: none;
   }
@@ -612,9 +612,9 @@ img {
   }
 }
 
-@media only screen and (max-width: 1279px) and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (max-width: 1279px) and (min-resolution: 192dpi),
-  only screen and (max-width: 1279px) and (min-resolution: 2dppx) {
+@media only screen and (max-width: 1279.8px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (max-width: 1279.8px) and (min-resolution: 192dpi),
+  only screen and (max-width: 1279.8px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../img/hero/background-tablet@2x.png);
   }
@@ -663,9 +663,9 @@ img {
   }
 }
 
-@media only screen and (max-width: 1439px) and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (max-width: 1439px) and (min-resolution: 192dpi),
-  only screen and (max-width: 1439px) and (min-resolution: 2dppx) {
+@media only screen and (max-width: 1439.8px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (max-width: 1439.8px) and (min-resolution: 192dpi),
+  only screen and (max-width: 1439.8px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../img/hero/background-desktop@2x.png);
   }
@@ -888,7 +888,7 @@ img {
 .our-courses-box {
   display: flex;
   flex-direction: column;
-  /*align-items: start;*/
+  align-items: flex-start;
   gap: 20px;
   min-width: 100%;
   max-height: 100%;
@@ -1313,7 +1313,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 1279px) {
+@media only screen and (max-width: 1279.8px) {
   .image-photo-block,
   .image-video-block {
     display: none;
@@ -1524,9 +1524,9 @@ img {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (max-width: 767px) and (min-resolution: 192dpi),
-  only screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media only screen and (max-width: 767.8px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (max-width: 767.8px) and (min-resolution: 192dpi),
+  only screen and (max-width: 767.8px) and (min-resolution: 2dppx) {
   .footer {
     background-image: url(../img/hero/background-mob@2x.png);
   }
@@ -1652,7 +1652,7 @@ img {
 /* ======================================================= */
 /*============== FOR TABLETS FROM 768PX  ============*/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768.8px) {
   .footer {
     background-image: url(../img/hero/background-tablet.png);
     padding-top: 50px;
@@ -1915,6 +1915,8 @@ img {
   position: relative;
   color: var(--black-light);
 }
+.current:active .current::after,
+.current:active .current::before,
 .current:hover .current::after,
 .current:focus .current::after,
 .current:hover .current::before,
