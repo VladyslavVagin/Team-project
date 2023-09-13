@@ -1942,6 +1942,7 @@ img {
   visibility: visible;
   opacity: 1;
   transition: visibility var(--animation), opacity var(--animation);
+  overflow: scroll;
 }
 
 .is-hidden {
@@ -1963,7 +1964,7 @@ img {
   background-color: #bea69e;
 
   padding: 20px;
-  overflow: auto;
+  overflow: scroll;
   background-image: url("../img/mobile-menu/mob-menu-bg_mob.jpg");
 
   background-position: bottom;
