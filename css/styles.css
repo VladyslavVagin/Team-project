@@ -1,4 +1,7 @@
 /*======================= BASIC STYLES ===================== */
+html {
+  -webkit-text-size-adjust: none;
+}
 :root {
   --black: #121212;
   --black-light: #1d1d1d;
