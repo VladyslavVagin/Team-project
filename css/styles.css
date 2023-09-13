@@ -2023,13 +2023,12 @@ img {
   justify-content: center;
 
   background-color: transparent;
-  margin-bottom: 128px;
+  margin-bottom: 10vh;
   margin-left: auto;
 }
 
 @media only screen and (min-width: 768px) {
   .close-button {
-    margin-bottom: 172px;
     width: 40px;
     height: 40px;
   }
