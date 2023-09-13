@@ -1915,7 +1915,7 @@ img {
 .mobile-menu {
   margin-left: auto;
   width: 218px;
-  height: 100vh;
+  height: 100%;
   z-index: 1000;
   background-color: #bea69e;
 
