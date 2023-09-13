@@ -2045,7 +2045,7 @@ img {
 @media only screen and (min-width: 768px) {
   .mobile-menu {
     width: 480px;
-    padding: 20px 32px 0 64px;
+    padding: 40px 32px 32px 64px;
   }
 }
 
