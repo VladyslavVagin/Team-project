@@ -1905,25 +1905,43 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--black-light);
   background-color: transparent;
   margin-bottom: 10vh;
   margin-left: auto;
-  transition: border-color var(--animation);
 }
-.close-button:focus,
-.close-button:hover {
-  border-color: var(--white);
+.current {
+  position: relative;
+  color: var(--black-light);
 }
-
-.close-button:hover .menu-close-icon,
-.close-button:focus .menu-close-icon {
-  stroke: var(--white);
+.current:hover .current::after,
+.current:focus .current::after,
+.current:hover .current::before,
+.current:focus .current::before {
+  background-color: var(--white);
 }
-
-.menu-close-icon {
-  stroke: var(--black-light);
-  transition: stroke var(--animation);
+.current::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  left: 0;
+  top: 15px;
+  height: 2px;
+  background-color: var(--black-light);
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: background-color var(--animation);
+}
+.current::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  left: 0;
+  bottom: 15px;
+  height: 2px;
+  background-color: var(--black-light);
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: background-color var(--animation);
 }
 
 /*
@@ -1953,13 +1971,12 @@ img {
     width: 40;
     height: 40;
   }
-  .menu-close-icon {
-    width: 40px;
-    height: 40px;
-  }
-
   .mobile-menu-list {
     gap: 28px;
+  }
+  .current::before,
+  .current::after {
+    width: 100%;
   }
 }
 
