@@ -1905,19 +1905,25 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  border: 1px solid var(--black-light);
   background-color: transparent;
   margin-bottom: 10vh;
   margin-left: auto;
+  transition: border-color var(--animation);
 }
+.close-button:focus,
+.close-button:hover {
+  border-color: var(--white);
+}
+
+.close-button:hover .menu-close-icon,
+.close-button:focus .menu-close-icon {
+  stroke: var(--white);
+}
+
 .menu-close-icon {
   stroke: var(--black-light);
   transition: stroke var(--animation);
-}
-.menu-close-icon:hover,
-.menu-close-icon:focus,
-.menu-close-icon:active {
-  stroke: var(--white);
 }
 
 /*
