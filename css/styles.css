@@ -2034,7 +2034,6 @@ img {
 }
 .menu-close-icon {
   stroke: var(--black-light);
-  display: block;
   transition: stroke var(--animation);
 }
 .menu-close-icon:hover,
