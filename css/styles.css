@@ -2035,15 +2035,13 @@ img {
 
 @media only screen and (min-width: 768px) {
   .close-button {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 }
 
 .menu-close-icon {
-  stroke: var(--black);
-  width: 32px;
-  height: 32px;
+  stroke: var(--black-light);
   display: block;
   transition: stroke var(--animation);
 }
@@ -2051,13 +2049,6 @@ img {
 .menu-close-icon:focus,
 .menu-close-icon:active {
   stroke: var(--white);
-}
-
-@media only screen and (min-width: 768px) {
-  .menu-close-icon {
-    width: 40px;
-    height: 40px;
-  }
 }
 
 /*
