@@ -2022,8 +2022,8 @@ img {
 */
 
 .close-button {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2032,14 +2032,6 @@ img {
   margin-bottom: 10vh;
   margin-left: auto;
 }
-
-@media only screen and (min-width: 768px) {
-  .close-button {
-    width: 30px;
-    height: 30px;
-  }
-}
-
 .menu-close-icon {
   stroke: var(--black-light);
   display: block;
