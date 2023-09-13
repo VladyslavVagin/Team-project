@@ -1113,78 +1113,65 @@ img {
 .mentors-section-title {
   margin-bottom: 40px;
 }
-
 .mentors-section-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   text-align: center;
-  gap: 40px 93px;
+  row-gap: 40px;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
 }
-
-.mentors-section-item:nth-child(3) {
-  max-width: 194px;
-}
-@media only screen and (min-width: 768px) {
-  .mentors-section-title {
-    margin-bottom: 50px;
-  }
-
-  .mentors-section-list {
-    max-width: 474px;
-    gap: 93px 100px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .mentors-section-list {
-    max-width: 1079px;
-    gap: 93px;
-    margin: 0 auto;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .mentors-section-title {
-    margin-bottom: 50px;
-  }
-
-  .mentors-section-list {
-    max-width: 1189px;
-    gap: 113px;
-  }
-}
-
 .mentor-img {
   border-radius: 200px;
   margin: 0 auto 16px;
 }
-
 .mentor-name {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 4px;
 }
-
 .mentor-experience {
   color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: -0.02em;
 }
-
+/* ===================================================================== */
+/*======================== FOR TABLETS 768PX AND MORE  =================*/
 @media only screen and (min-width: 768px) {
+  .mentors-section-title {
+    margin-bottom: 50px;
+  }
+  .mentors-section-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 100px;
+  }
+  .mentors-section-item:nth-child(3) {
+    max-width: 194px;
+  }
   .mentor-name {
     font-size: 28px;
     line-height: 1.14;
   }
-
   .mentor-experience {
     font-size: 14px;
     line-height: 1.29;
+  }
+}
+/* ========================================================================== */
+/*========================== FOR DESKTOP FM 1280PX  =========================*/
+@media only screen and (min-width: 1280px) {
+  .mentors-section-list {
+    column-gap: 93px;
+  }
+}
+/*============== FOR DESKTOP 1440PX and MORE =============== */
+@media only screen and (min-width: 1440px) {
+  .mentors-section-list {
+    column-gap: 113px;
   }
 }
 /* ========================================================================== */
