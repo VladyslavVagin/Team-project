@@ -1069,17 +1069,17 @@ img {
 .our-courses-icon {
   padding: 0 9px;
   fill: #ffffff66;
-  transition: all 0.5s ease-in-out;
+  transition: all var(--animation);
 }
 
 .our-courses-icon:active {
-  fill: #ffffff;
+  fill: var(--white);
 }
 
 @media only screen and (min-width: 1280px) {
   .our-courses-icon:hover,
   .our-courses-icon:focus {
-    fill: #ffffff;
+    fill: var(--white);
   }
 }
 
@@ -1182,265 +1182,139 @@ img {
 }
 /* ========================================================================== */
 /*============================= SIGN UP  ===========================*/
-@media only screen and (min-width: 375px) and (max-width: 767.98px) {
-  .signin {
-    max-width: 375px;
-  }
+.sign-up-container {
+  padding-left: 19px;
+  padding-right: 19px;
 }
-
-@media screen and (min-width: 1280px) {
-  .signin {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    max-width: 1080px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .signin {
-    justify-content: space-between;
-    max-width: 1240px;
-  }
-}
-
-.sign-pictures {
-  display: flex;
-  gap: 20px;
-  align-items: end;
-}
-
-.sign-please {
+.pre-form-text {
   margin-bottom: 40px;
-  margin-right: 40px;
 }
-
-@media only screen and (min-width: 768px) {
-  .sign-please {
-    margin-right: 0px;
-  }
+.form-container {
+  max-width: 482px;
 }
-
-.sign-up {
-  display: flex;
-  flex-direction: column;
+.sign-up-title {
+  margin-bottom: 20px;
 }
-
-@media only screen and (min-width: 768px) {
-  .sign-up {
-    max-width: 480px;
-  }
-}
-
-.sign-button {
+.input-form-textarea,
+.input-form {
+  width: 100%;
+  background-color: transparent;
   border-radius: 12px;
-  background: var(--white, #fff);
-  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 14px 18px;
+  outline: none;
+  color: var(--white);
+  transition: border-color var(--animation);
+  margin-bottom: 8px;
+}
+.input-form-textarea:focus-within,
+.input-form:focus-within {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.input-form-textarea {
+  height: 112px;
+  resize: none;
+  margin-bottom: 40px;
+}
+.send-button {
   width: 100%;
   height: 48px;
-  justify-content: center;
-  align-items: center;
-  color: var(--black, #121212);
+  border-radius: 12px;
+  background: var(--white);
+  text-transform: uppercase;
+  color: var(--black);
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
-  text-transform: uppercase;
-  transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-.form-sign-blok-btn {
+  transition: background-color var(--animation), color var(--animation);
   margin-bottom: 20px;
 }
-
-@media screen and (min-width: 768px) {
-  .sign-button {
-    width: 100%;
-    height: 60px;
-  }
+.send-button:hover,
+.send-button:focus {
+  background-color: var(--black-light);
+  color: var(--brown);
 }
 
-@media (hover: hover) {
-  .sign-button:hover,
-  .sign-button:focus {
-    background-color: var(--black, #121212);
-    color: #bea69e;
-  }
-}
-
-.sign-button:active {
-  background-color: #1d1d1d;
-  color: #bea69e;
-}
-
-.input-sign {
-  width: 100%;
-  background: transparent;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  outline: none;
-  transition: border 0.3s ease;
-  padding: 14px 18px;
-  font-size: 14px;
-  color: var(--white);
-}
-
-.form-sign-blok {
-  margin-bottom: 8px;
-}
-
-@media screen and (min-width: 768px) {
-  .form-sign-blok {
-    margin-bottom: 14px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .input-sign,
-  .area {
-    padding: 20px 18px;
-    font-size: 16px;
-    line-height: 1.25;
-  }
-}
-
-.input-sign:focus {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.area {
-  color: var(--white);
-  height: 112px;
-  flex-shrink: 0;
-  resize: none;
-  padding: 20px;
-}
-
-.form-sign-blok-area {
-  margin-bottom: 40px;
-}
-
-@media screen and (min-width: 768px) {
-  .area {
-    padding: 20px;
-    height: 118px;
-  }
-}
-
-.accept {
+.private-policy {
   color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
   line-height: 1.33;
+  max-width: 340px;
 }
-
-@media screen and (min-width: 768px) {
-  .accept {
-    line-height: 1.28;
-    font-size: 14px;
-  }
-}
-
-.link-privacy {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 12px;
-  line-height: 18px;
-  text-decoration-line: underline;
+.policy-link {
+  text-decoration: underline;
   transition: color var(--animation);
 }
-
-@media (hover: hover) {
-  .link-privacy:focus,
-  .link-privacy:hover {
-    color: var(--brown);
-  }
+.policy-link:hover,
+.policy-link:focus,
+.policy-link:active {
+  color: var(--brown);
 }
 
-@media screen and (min-width: 768px) {
-  .privacy {
+@media only screen and (min-width: 768px) {
+  .input-form {
+    margin-bottom: 14px;
+    padding: 20px 18px;
+  }
+  .private-policy {
     font-size: 14px;
+    line-height: 1.28;
+    max-width: 450px;
+  }
+  .policy-link {
+    margin-right: 40px;
+  }
+
+  .send-button {
+    height: 60px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+  .input-form-textarea {
+    height: 120px;
   }
 }
 
-.sign-title {
-  margin-bottom: 20px;
-}
-
-.form-sign {
-  display: flex;
-  flex-direction: column;
-}
-
-.sign-pictures {
-  display: none;
-}
-
-@media screen and (min-width: 1280px) {
-  .sign-pictures {
+@media only screen and (min-width: 1280px) {
+  .sign-up-container {
     display: flex;
-    width: 540px;
-    height: 540px;
+    justify-content: space-between;
   }
-}
-
-@media screen and (min-width: 1440px) {
-  .sign-pictures {
+  .image-container {
     display: flex;
-    width: 560px;
+    align-items: flex-end;
+    column-gap: 20px;
+    padding-bottom: 38px;
+  }
+  .image-photo-block {
+    width: 180px;
+    height: 288px;
+    background-color: #bea69e;
+    border-radius: 1000px;
+    position: relative;
+  }
+  .lens-image {
+    position: absolute;
+    top: 26%;
+    right: 12%;
+  }
+
+  .image-video-block {
+    width: 340px;
     height: 540px;
+    border-radius: 1000px;
+    background: var(--black-light);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 88px;
   }
 }
 
-.picture-lens {
-  width: 180px;
-  height: 288px;
-  flex-shrink: 0;
-  border-radius: 1000px;
-  background: #bea69e;
-}
-
-@media only screen and (min-width: 1440px) {
-  .picture-lens {
-    width: 190px;
-  }
-}
-
-.picture-camera {
-  width: 340px;
-  height: 540px;
-  padding: 156px 50px 88px;
-  flex-shrink: 0;
-  border-radius: 1000px;
-  background: var(--black-light);
-}
-
-@media only screen and (min-width: 1440px) {
-  .picture-camera {
-    width: 350px;
-    padding: 139px 48px 88px;
-  }
-}
-
-.lens-img {
-  margin-top: 66px;
-  margin-left: -24%;
-  width: 202px;
-  max-width: none;
-}
-
-@media only screen and (min-width: 1440px) {
-  .lens-img {
-    margin-left: -16%;
-  }
-}
-
-.camera-img {
-  width: 240px;
-  height: 296px;
-}
-
-@media screen and (min-width: 1440px) {
-  .camera-img {
-    width: 254px;
-    height: 313px;
+@media only screen and (max-width: 1279px) {
+  .image-photo-block,
+  .image-video-block {
+    display: none;
   }
 }
 /* ============================================================================== */
@@ -1710,11 +1584,15 @@ img {
   border-radius: 14px;
   border: none;
   outline: none;
-
   color: var(--black);
   font-size: 16px;
   font-style: normal;
   line-height: 1.25;
+  transition: background-color var(--animation), color var(--animation);
+}
+.contact-input:focus-within {
+  background-color: var(--black-light);
+  color: var(--brown);
 }
 
 .contact-btn {
