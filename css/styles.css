@@ -6,11 +6,9 @@
   --brown: #bea69e;
   --white: #ffff;
   --animation: 0.3s ease;
-
   /* Плавний скролл сторінки */
   scroll-behavior: smooth;
 }
-
 /* Загальні стилі */
 body {
   font-family: "DM Sans", sans-serif;
@@ -18,9 +16,7 @@ body {
   background-color: var(--black);
   color: var(--white);
 }
-
 /* Стилі для деяких базових блоків з текстом */
-
 .text {
   font-size: 14px;
   line-height: 1.28;
@@ -49,24 +45,19 @@ body {
     line-height: 1.13;
   }
 }
-
 /* Загальні заголовки в деяких блоках з картками */
-
 .subtitle {
   font-size: 28px;
   font-weight: 500;
   line-height: 1.14;
 }
-
 /* Загалні стилі посилань навігації хедера і футера */
-
 .link-nav {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
   transition: color var(--animation);
 }
-
 @media (hover: hover) {
   .link-nav:focus,
   .link-nav:hover {
@@ -87,16 +78,13 @@ body {
     padding-bottom: 50px;
   }
 }
-
 @media only screen and (min-width: 1280px) {
   .section {
     padding-top: 75px;
     padding-bottom: 75px;
   }
 }
-
 /* Загальний контейнер */
-
 .container {
   min-width: 320px;
   max-width: 415px;
@@ -112,24 +100,20 @@ body {
     padding-left: 32px;
   }
 }
-
 @media only screen and (min-width: 1280px) {
   .container {
     max-width: 1144px;
   }
 }
-
 @media only screen and (min-width: 1440px) {
   .container {
     max-width: 1304px;
   }
 }
-
 .element-animation {
   opacity: 0;
   transform: translateY(5%);
 }
-
 .element-animation.element-show {
   opacity: 1;
   transform: translateY(0%);
@@ -147,28 +131,23 @@ h6,
 p {
   margin: 0;
 }
-
 p:last-child {
   margin-bottom: 0;
 }
-
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 a {
   color: currentColor;
   text-decoration: none;
 }
-
 button {
   font-family: inherit;
   cursor: pointer;
   border: none;
 }
-
 img {
   display: block;
   max-width: 100%;
@@ -183,16 +162,13 @@ img {
   z-index: 999;
   width: 100%;
 }
-
 .header-container {
   transition: transform var(--animation);
 }
-
 .header-container.hide {
   transition: transform var(--animation);
   transform: translateY(-150%);
 }
-
 .header-nav {
   border-radius: 12px;
   display: flex;
@@ -203,21 +179,17 @@ img {
   justify-content: space-between;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 .header-logo-link {
   height: 16px;
 }
-
 .header-nav-list {
   display: flex;
-  gap: 28px;
+  gap: 8px;
 }
-
 .header-button-container {
   display: flex;
   gap: 14px;
 }
-
 .header-nav-button {
   background-color: transparent;
   display: inline-flex;
@@ -229,7 +201,6 @@ img {
 .header-nav-button:active {
   stroke: var(--brown);
 }
-
 .header-singup-link {
   background-color: var(--black-light);
   display: block;
@@ -239,26 +210,21 @@ img {
   border-radius: 50%;
   transition: background-color var(--animation), color var(--animation);
 }
-
 .header-nav-link {
-  padding: 10px 0;
+  padding: 10px 10px;
 }
-
 .header-singup-icon {
   fill: var(--brown);
   fill-opacity: 0.4;
   transition: fill-opacity var(--animation);
 }
-
 .header-singup-link:active .header-singup-icon {
   fill-opacity: 1;
 }
-
 .header-singup-link:active {
   background-color: var(--black-light);
   color: var(--brown);
 }
-
 @media (hover: hover) {
   .header-singup-link:hover .header-singup-icon,
   .header-singup-link:focus .header-singup-icon {
@@ -276,29 +242,20 @@ img {
     padding: 0;
   }
 }
-
 @media (max-width: 767.98px) {
   .header-singup-title {
     display: none;
   }
 }
-
 @media (min-width: 768px) {
-  .header-container {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
   .header-nav {
     height: 60px;
     margin-right: 200px;
     position: relative;
   }
-
   .header-singup-icon {
     display: none;
   }
-
   .header-singup-link {
     display: inline-flex;
     justify-content: center;
@@ -315,36 +272,30 @@ img {
     transform: translateY(-50%);
     color: var(--black);
   }
-
   .header-singup-title {
     color: inherit;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
   }
-
   .header-nav-icon {
     width: 40px;
     height: 28px;
   }
 }
-
 @media (max-width: 1279.98px) {
   .header-nav-list {
     display: none;
   }
 }
-
 @media (min-width: 1280px) {
   .header-nav {
     padding: 0 50px;
     margin-right: 258px;
   }
-
   .header-nav-button {
     display: none;
   }
-
   .header-singup-link {
     width: 238px;
     right: -260px;
@@ -352,7 +303,7 @@ img {
 }
 @media (min-width: 1440px) {
   .header-nav-list {
-    gap: 40px;
+    gap: 20px;
   }
 }
 /* ================================================================================= */
@@ -411,16 +362,13 @@ img {
   letter-spacing: -0.04em;
   color: var(--white);
 }
-
 .hero-title:not(:last-child) {
   margin-bottom: 20px;
 }
-
 .accent-hero {
   color: var(--brown);
   font-style: italic;
 }
-
 /* ===================================================== */
 /* =========  UnderTitle Text ========================== */
 .hero-text {
@@ -431,30 +379,24 @@ img {
   letter-spacing: -0.02em;
   margin-bottom: 40px;
 }
-
 /* ===================================================== */
 /* =========== HERO REVIEWS ============================== */
-
 .hero-reviews-list {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .hero-reviews-item {
   display: block;
 }
-
 .hero-reviews-item:last-child {
   z-index: 0;
 }
-
 .hero-reviews-item:nth-child(2) {
   margin-right: -12px;
   margin-left: -12px;
   z-index: 1;
 }
-
 .hero-reviews-item:first-child {
   z-index: 2;
 }
@@ -468,56 +410,51 @@ img {
   line-height: 1.25;
   letter-spacing: -0.04em;
 }
+.hero-reviews-text-two {
+  font-size: 16px;
+  font-weight: 500;
+}
 
 .hero-reviews-text {
   transition: color var(--animation);
   width: 67px;
 }
-
 .hero-reviews-text-one {
   margin-bottom: 4px;
   color: rgba(255, 255, 255, 0.5);
 }
-
 .hero-reviews {
   max-width: 251px;
   display: flex;
   align-items: flex-start;
   margin-bottom: 31px;
 }
-
 .arrow-icon {
   fill: var(--white);
   transition: fill var(--animation), transform var(--animation);
 }
-
 .hero-review-link:active .arrow-icon {
   fill: var(--brown);
 }
-
 .hero-review-link:active .hero-reviews-text {
   color: var(--brown);
 }
-
 @media (hover: hover) {
   .hero-review-link:hover .arrow-icon,
   .hero-review-link:focus .arrow-icon {
     fill: var(--brown);
     transform: scale(1.6);
   }
-
   .hero-review-link:hover .hero-reviews-text,
   .hero-review-link:focus .hero-reviews-text {
     color: var(--brown);
   }
 }
-
 .hero-review-link {
   display: flex;
   align-items: center;
   column-gap: 4px;
 }
-
 /* ================================================ */
 /*==================== ICON-STAR BOX ============== */
 .icon-star-cont {
@@ -535,11 +472,9 @@ img {
   fill: var(--brown);
   stroke: var(--black-light);
 }
-
 .sub-review-text-cont {
   margin-left: 12px;
 }
-
 /* =============================================== */
 /* ================  HERO IMAGE ====================== */
 .hero-image-container {
@@ -547,7 +482,6 @@ img {
   justify-content: center;
   align-items: end;
 }
-
 /* ======================================================= */
 /*==================== FOR TABLETS FROM 768PX  ============*/
 @media only screen and (min-width: 768px) {
@@ -556,75 +490,58 @@ img {
     padding-bottom: 100px;
     background-image: url(../img/hero/background-tablet.png);
   }
-
   .hero .container {
     padding: 64px 0 0 32px;
     max-width: 704px;
   }
-
   .hero-title {
     font-size: 60px;
     line-height: 1.07;
     max-width: 497px;
   }
-
   .hero-text {
     max-width: 418px;
   }
-
   /*========== HERO REVIEW BOX =============*/
   .hero-review-image {
     width: 54px;
     height: 54px;
   }
-
   .hero-reviews-container {
     display: flex;
   }
-
   .hero-reviews {
     max-width: 388px;
     align-items: center;
     margin-bottom: 40px;
   }
-
   .hero-review-link {
     flex-direction: column;
     row-gap: 8px;
     align-items: flex-start;
     margin-left: 12px;
   }
-
   .hero-reviews-text {
     width: 82px;
     font-size: 16px;
   }
-
   .icon-star-cont {
     width: 50px;
     height: 50px;
   }
-
   .hero-reviews-text-one {
     font-size: 16px;
     margin-bottom: 8px;
   }
-
-  .hero-reviews-text-two {
-    font-size: 16px;
-    font-weight: 500;
-  }
-
   /* ============================================= */
   /* ================== HERO IMAGE  ============= */
   .hero-image {
     width: 393px;
   }
 }
-
-@media only screen and (max-width: 1279.8px) and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (max-width: 1279.8px) and (min-resolution: 192dpi),
-  only screen and (max-width: 1279.8px) and (min-resolution: 2dppx) {
+@media only screen and (max-width: 1279.98px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (max-width: 1279.98px) and (min-resolution: 192dpi),
+  only screen and (max-width: 1279.98px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../img/hero/background-tablet@2x.png);
   }
@@ -638,7 +555,6 @@ img {
     padding-bottom: 150px;
     background-image: url(../img/hero/background-desktop.png);
   }
-
   .hero .container {
     max-width: 1080px;
     display: flex;
@@ -647,53 +563,43 @@ img {
     padding-left: 50px;
     padding-right: 50px;
   }
-
   .hero-content-container {
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
   }
-
   .hero-title {
     max-width: 538px;
     font-size: 64px;
   }
-
   .hero-text {
     flex: 1 1 auto;
-    /*margin-bottom: 136px;*/
   }
-
   .hero-reviews {
     margin-bottom: 0px;
   }
-
   .hero-image {
     width: 397px;
   }
 }
-
-@media only screen and (max-width: 1439.8px) and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (max-width: 1439.8px) and (min-resolution: 192dpi),
-  only screen and (max-width: 1439.8px) and (min-resolution: 2dppx) {
+@media only screen and (max-width: 1439.98px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (max-width: 1439.98px) and (min-resolution: 192dpi),
+  only screen and (max-width: 1439.98px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../img/hero/background-desktop@2x.png);
   }
 }
-
 /* ========================================================================= */
 /*=========================== FOR DESKTOP MORE THAN 1440PX  =================*/
 @media only screen and (min-width: 1440px) {
   .hero {
     background-image: url(../img/hero/background-max.png);
   }
-
   .hero .container {
     max-width: 1240px;
     padding-right: 100px;
   }
 }
-
 @media only screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-width: 1440px) and (min-resolution: 192dpi),
   only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
@@ -765,81 +671,66 @@ img {
 .section-about {
   padding-top: 80px;
 }
-
 .about-us-title {
   margin-bottom: 40px;
 }
-
 .about-content {
   max-width: 335px;
   display: flex;
   flex-direction: column;
   row-gap: 40px;
-  /*align-items: center;*/
   margin: 0 auto;
 }
-
 .about-text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 20px;
 }
-
 /* ============================================================== */
 /*=================== FOR TABLET FROM 768 PX  ===================*/
 @media only screen and (min-width: 768px) {
   .section-about {
     padding-top: 100px;
   }
-
   .about-content {
     max-width: 704px;
     row-gap: 50px;
   }
-
   .about-us-title {
     margin-bottom: 50px;
   }
-
   .about-text-container {
     flex-direction: row;
     column-gap: 40px;
     align-items: flex-start;
   }
-
   .about-text-container .text {
     max-width: 280px;
   }
 }
-
 /* ================================================================== */
 /*========================= FOR DESKTOP FROM 1280PX  =================*/
 @media only screen and (min-width: 1280px) {
   .section-about {
     padding-top: 150px;
   }
-
   .about-content {
     max-width: 1080px;
   }
-
   .about-content {
     width: 100%;
     flex-direction: row;
     align-items: center;
     column-gap: 40px;
   }
-
   .about-text-container {
     column-gap: 20px;
   }
-
   .about-text-container .text {
     max-width: 268px;
   }
 }
-
 /* ======================================================================= */
 /*========================= FOR DESKTOP 1440PX AND MORE  =================*/
 @media only screen and (min-width: 1440px) {
@@ -847,11 +738,9 @@ img {
     max-width: 1280px;
     column-gap: 50px;
   }
-
   .about-text-container {
     column-gap: 40px;
   }
-
   .about-text-container .text {
     max-width: 330px;
   }
@@ -863,141 +752,87 @@ img {
   | Стилі секції і контейнера
   |============================
 */
-
 .our-courses {
   display: flex;
-  padding: 40px 0;
 }
-
-@media only screen and (min-width: 768px) {
-  .our-courses {
-    padding: 50px 0;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .our-courses {
-    display: block;
-    padding: 75px 0;
-  }
-}
-
 .our-courses-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
-@media only screen and (min-width: 768px) {
-  .our-courses-container {
-    align-items: start;
-  }
-}
-
 .our-courses-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
   min-width: 100%;
-  max-height: 100%;
   margin-bottom: 40px;
 }
-
-@media only screen and (min-width: 768px) {
-  .our-courses-box {
-    flex-direction: row;
-    justify-content: space-between;
-    max-height: 80px;
-    margin-bottom: 50px;
-  }
+/*==================== ARROW STYLES  ===================*/
+.our-courses-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: var(--black-light);
+  transition: background-color var(--animation);
 }
-
-@media only screen and (min-width: 1280px) {
-  .our-courses-box {
-    margin-bottom: 50px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .our-courses-box {
-    max-height: 60px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .our-courses-title {
-    min-width: 265px;
-  }
-}
-
 .our-courses-text {
   max-width: 335px;
-  min-height: 72px;
 }
 
-@media only screen and (min-width: 768px) {
-  .our-courses-text {
-    min-width: 381px;
-    min-height: 80px;
-  }
+.our-courses-link:active,
+.our-courses-link:focus {
+  background-color: var(--brown);
+}
+.our-courses-icon {
+  padding: 0 9px;
+  fill: #ffffff66;
+  transition: all var(--animation);
+}
+.our-courses-icon:active {
+  fill: var(--white);
+}
+/* ================================================================================ */
+/*==================== CARD TITLE + DESCRIPTION ================*/
+.our-courses-item-title {
+  max-width: 70%;
+  margin-bottom: auto;
+}
+.our-courses-desc {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  width: 100%;
 }
 
-@media only screen and (min-width: 1280px) {
-  .our-courses-text {
-    min-width: 405px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .our-courses-text {
-    min-width: 565px;
-    min-height: 60px;
-  }
-}
-
-/* Стилі карток */
-
+/*=================== CARDS STYLES =================*/
 .our-courses-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
   padding-left: 0;
   margin: 0;
 }
-
-@media only screen and (min-width: 768px) {
-  .our-courses-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .our-courses-list {
-    width: 100%;
-    align-items: baseline;
-  }
-}
-
 .our-courses-list-item {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 335px;
+  max-width: 100%;
   min-height: 398px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
   padding: 88px 28px 28px;
-  margin: 0 0 20px;
   counter-increment: count;
 }
-
-.our-courses-list-item:last-child {
-  margin-bottom: 0;
-}
-
 .our-courses-list-item::before {
   content: counter(count, decimal-leading-zero);
   position: absolute;
@@ -1008,121 +843,79 @@ img {
   line-height: 1.28;
   letter-spacing: -0.28px;
 }
-
+/* ========================================================================== */
+/*================================= FOR TABLETS FROM 768PX  ======================*/
 @media only screen and (min-width: 768px) {
+  .our-courses-container {
+    align-items: start;
+  }
+  .our-courses-box {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .our-courses-text {
+    min-width: 381px;
+  }
+  .our-courses-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
   .our-courses-list-item::before {
     top: 32px;
     left: 32px;
   }
-}
-
-@media only screen and (min-width: 768px) {
   .our-courses-list-item {
     max-width: 342px;
     min-height: 452px;
     padding: 96px 32px 32px;
   }
-
-  @media only screen and (min-width: 1280px) {
-    .our-courses-list-item {
-      max-width: 347px;
-      margin: 0;
-    }
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .our-courses-list-item {
-    max-width: 400px;
-  }
-}
-
-.our-courses-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 28px;
-  right: 28px;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 32px;
-  height: 32px;
-  background-color: var(--black-light);
-  transition: all 0.5s ease-in-out;
-}
-
-.our-courses-link:active {
-  background-color: var(--brown);
-}
-
-@media (hover: hover) {
-  .our-courses-link:hover {
-    background-color: var(--brown);
-  }
-}
-
-@media only screen and (min-width: 768px) {
   .our-courses-link {
     top: 32px;
     right: 32px;
   }
+  .our-courses-desc {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
-
+/* ============================================================================== */
+/*===================== FOR DESKTOP FROM 1280PX =================================*/
 @media only screen and (min-width: 1280px) {
+  .our-courses {
+    display: block;
+  }
+  .our-courses-text {
+    min-width: 405px;
+  }
+  .our-courses-list {
+    flex-wrap: nowrap;
+  }
+  .our-courses-list-item {
+    max-width: calc((100% - 40px) / 3);
+  }
   .our-courses-link:hover,
   .our-courses-link:focus {
     background-color: var(--brown);
-    fill: #ffffff;
+    fill: var(--white);
     cursor: pointer;
   }
-}
-
-.our-courses-icon {
-  padding: 0 9px;
-  fill: #ffffff66;
-  transition: all var(--animation);
-}
-
-.our-courses-icon:active {
-  fill: var(--white);
-}
-
-@media only screen and (min-width: 1280px) {
   .our-courses-icon:hover,
   .our-courses-icon:focus {
     fill: var(--white);
   }
 }
-
-.our-courses-item-title {
-  /*margin-top: 60px;*/
-  margin-bottom: auto;
-  min-height: 64px;
-  padding-right: 10px;
-}
-
-@media only screen and (min-width: 768px) {
-  .our-courses-item-title {
-    max-width: 265px;
-    /*our-courses-list-item*/
+/* ============================================================================= */
+/*============================= FOR DESKTOP FROM 1440PX =======================*/
+@media only screen and (min-width: 1440px) {
+  .our-courses-text {
+    min-width: 565px;
   }
 }
-
-.our-courses-desc {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: -0.02em;
-  width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  .our-courses-desc {
-    max-height: 80px;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: -0.02em;
+@media (hover: hover) {
+  .our-courses-link:hover {
+    background-color: var(--brown);
   }
 }
 /* ============================================================================= */
@@ -1323,7 +1116,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 1279.8px) {
+@media only screen and (max-width: 1279.98px) {
   .image-photo-block,
   .image-video-block {
     display: none;
@@ -1357,7 +1150,7 @@ img {
   gap: 20px;
 }
 
-@media only screen and (max-width: 1279.8px) {
+@media only screen and (max-width: 1279.98px) {
   .reviews-list .reviews-list-item {
     display: none;
   }
@@ -1534,9 +1327,9 @@ img {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-@media only screen and (max-width: 767.8px) and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (max-width: 767.8px) and (min-resolution: 192dpi),
-  only screen and (max-width: 767.8px) and (min-resolution: 2dppx) {
+@media only screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (max-width: 767.98px) and (min-resolution: 192dpi),
+  only screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
   .footer {
     background-image: url(../img/hero/background-mob@2x.png);
   }
@@ -1991,7 +1784,6 @@ img {
     width: 100%;
   }
 }
-
 @media only screen and (min-width: 1280px) {
   .backdrop {
     display: none;
