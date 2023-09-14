@@ -780,6 +780,7 @@ img {
 }
 .our-courses-text {
   max-width: 335px;
+  margin: 0 auto;
 }
 
 .our-courses-link:active,
@@ -850,6 +851,7 @@ img {
     margin-bottom: 50px;
   }
   .our-courses-text {
+    margin: 0;
     min-width: 381px;
   }
   .our-courses-list {
