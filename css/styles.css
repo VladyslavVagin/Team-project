@@ -1455,7 +1455,7 @@ img {
 /* ======================================================= */
 /*============== FOR TABLETS FROM 768PX  ============*/
 
-@media only screen and (min-width: 768.8px) {
+@media only screen and (min-width: 768px) {
   .footer {
     background-image: url(../img/hero/background-tablet.png);
     padding-top: 50px;
@@ -1606,8 +1606,7 @@ img {
   width: 218px;
   height: 100%;
   z-index: 1000;
-  background-color: #bea69e;
-
+  background-color: var(--brown);
   padding: 20px;
   overflow: scroll;
   background-image: url("../img/mobile-menu/mob-menu-bg_mob.jpg");
@@ -1693,17 +1692,14 @@ img {
     padding: 40px 32px 32px 64px;
   }
 }
-
 .mobile-menu.is-open {
   transform: translateX(0%);
 }
-
 /*
   |============================
   | button
   |============================
 */
-
 .close-button {
   width: 32px;
   height: 32px;
@@ -1718,10 +1714,6 @@ img {
   position: relative;
   color: var(--black-light);
 }
-.current:active .current::after,
-.current:active .current::before {
-  transform: translate(100%, 100%);
-}
 .current::before {
   content: "";
   position: absolute;
@@ -1732,8 +1724,6 @@ img {
   background-color: var(--black-light);
   border-radius: 2px;
   transform: rotate(45deg);
-  transition: background-color var(--animation);
-  transition: transform 2500ms ease;
 }
 .current::after {
   content: "";
@@ -1745,23 +1735,18 @@ img {
   background-color: var(--black-light);
   border-radius: 2px;
   transform: rotate(-45deg);
-  transition: background-color var(--animation);
-  transition: transform 2500ms ease;
 }
-
 /*
   |============================
   | menu-list
   |============================
 */
-
 .mobile-menu-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
 }
-
 .mob-menu-link {
   color: var(--black);
 }
