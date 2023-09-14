@@ -627,7 +627,7 @@ img {
     transform: translateX(150%);
   }
   to {
-    transform: translateX(-300%);
+    transform: translateX(-250%);
   }
 }
 .strip-section .container {
@@ -658,6 +658,16 @@ img {
     line-height: 1.08;
     animation-duration: 7s;
     animation-timing-function: cubic-bezier(0.34, 1.06, 0.55, 0);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  @keyframes runningStrip {
+    from {
+      transform: translateX(134%);
+    }
+    to {
+      transform: translateX(-120%);
+    }
   }
 }
 /* ==================================================================================== */
