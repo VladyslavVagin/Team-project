@@ -234,7 +234,7 @@ img {
 }
 @media only screen and (min-width: 440px) and (max-width: 767.98px) {
   .header-container {
-    padding: 0;
+    padding: 20;
   }
 }
 @media (max-width: 767.98px) {
@@ -323,8 +323,6 @@ img {
   border-radius: 30px;
   background-color: var(--black-light);
   padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
   overflow: hidden;
   min-width: 280px;
 }
@@ -486,8 +484,8 @@ img {
     background-image: url(../img/hero/background-tablet.png);
   }
   .hero .container {
-    padding: 64px 0 0 32px;
-    max-width: 704px;
+    padding-top: 64px;
+    padding-bottom: 32px;
   }
   .hero-title {
     font-size: 60px;
@@ -680,7 +678,6 @@ img {
   margin-bottom: 40px;
 }
 .about-content {
-  max-width: 335px;
   display: flex;
   flex-direction: column;
   row-gap: 40px;
@@ -689,7 +686,6 @@ img {
 .about-text-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   row-gap: 20px;
 }
 /* ============================================================== */
@@ -699,7 +695,6 @@ img {
     padding-top: 100px;
   }
   .about-content {
-    max-width: 704px;
     row-gap: 50px;
   }
   .about-us-title {
@@ -763,13 +758,10 @@ img {
 .our-courses-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .our-courses-box {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 20px;
   min-width: 100%;
   margin-bottom: 40px;
@@ -789,7 +781,6 @@ img {
   transition: background-color var(--animation);
 }
 .our-courses-text {
-  max-width: 335px;
   margin: 0 auto;
 }
 
@@ -862,7 +853,7 @@ img {
   }
   .our-courses-text {
     margin: 0;
-    min-width: 381px;
+    max-width: 381px;
   }
   .our-courses-list {
     flex-direction: row;
@@ -994,15 +985,11 @@ img {
 }
 /* ========================================================================== */
 /*============================= SIGN UP  ===========================*/
-.sign-up-container {
-  padding-left: 19px;
-  padding-right: 19px;
-}
 .pre-form-text {
   margin-bottom: 40px;
 }
 .form-container {
-  max-width: 482px;
+  max-width: 480px;
 }
 .sign-up-title {
   margin-bottom: 20px;
